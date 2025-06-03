@@ -12,6 +12,11 @@ import 'providers/learning_provider.dart';
 import 'utils/app_colors.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]);
   runApp(const CoreMindApp());
 }
 
